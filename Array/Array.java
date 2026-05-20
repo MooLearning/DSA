@@ -1,4 +1,8 @@
+import java.util.Arrays;
+
 class Insert {
+
+    // ==================== MANUAL VERSION ====================
 
     static int[] atBeginning(int[] arr, int value) {
         return atPosition(arr, value, 0);
@@ -11,6 +15,7 @@ class Insert {
             return arr;
         }
 
+        // -------- Manual Logic --------
         int[] newArr = new int[arr.length + 1];
 
         for (int i = 0; i < pos; i++) {
@@ -22,6 +27,17 @@ class Insert {
         for (int i = pos; i < arr.length; i++) {
             newArr[i + 1] = arr[i];
         }
+
+
+        /*
+        // -------- Inbuilt Function Logic --------
+        int[] newArr = new int[arr.length + 1];
+
+        System.arraycopy(arr, 0, newArr, 0, pos);
+        newArr[pos] = value;
+        System.arraycopy(arr, pos, newArr, pos + 1, arr.length - pos);
+        */
+
 
         Utility.operation(
                 "INSERT",
@@ -52,10 +68,19 @@ class Modify {
             return;
         }
 
+        // -------- Manual Logic --------
         int[] prevArr = arr.clone();
-
         int oldValue = arr[pos];
         arr[pos] = value;
+
+
+        /*
+        // -------- Inbuilt Function Logic --------
+        int[] prevArr = Arrays.copyOf(arr, arr.length);
+        int oldValue = arr[pos];
+        arr[pos] = value;
+        */
+
 
         Utility.operation(
                 "MODIFY",
@@ -73,8 +98,11 @@ class Modify {
 
 class Traverse {
 
+    // ==================== MANUAL VERSION ====================
+
     static void linear(int[] arr) {
 
+        // -------- Manual Logic --------
         for (int i = 0; i < arr.length; i++) {
 
             if (i == arr.length - 1) {
@@ -85,10 +113,18 @@ class Traverse {
         }
 
         System.out.println();
+
+
+        /*
+        // -------- Inbuilt Function Logic --------
+        System.out.println(Arrays.toString(arr));
+        */
     }
+
 
     static void reverse(int[] arr) {
 
+        // -------- Manual Logic --------
         for (int i = arr.length - 1; i >= 0; i--) {
 
             if (i == 0) {
@@ -107,12 +143,18 @@ class Search {
 
     static int linear(int[] arr, int target) {
 
+        // -------- Manual Logic --------
         for (int i = 0; i < arr.length; i++) {
 
             if (arr[i] == target) {
                 return i;
             }
         }
+
+        /*
+        // -------- Inbuilt Function Logic --------
+        return Arrays.binarySearch(arr, target);
+        */
 
         return -1;
     }
@@ -122,14 +164,15 @@ class Search {
 class Utility {
 
     static void title(String str) {
-
         System.out.println("\n");
         System.out.println("========== " + str + " ==========");
         System.out.println();
     }
 
+
     static void printArray(int[] arr) {
 
+        // -------- Manual Logic --------
         System.out.print("[ ");
 
         for (int i = 0; i < arr.length; i++) {
@@ -142,7 +185,14 @@ class Utility {
         }
 
         System.out.print(" ]");
+
+
+        /*
+        // -------- Inbuilt Function Logic --------
+        System.out.print(Arrays.toString(arr));
+        */
     }
+
 
     static void operation(
             String operationName,
@@ -174,24 +224,22 @@ public class Array {
         int[] array = {5, 6, 7, 8, 9};
 
         Utility.title("Initial Array");
-
         Traverse.linear(array);
+
 
         Utility.title("Insert Operations");
 
         array = Insert.atBeginning(array, 100);
-
         array = Insert.atPosition(array, 200, 3);
-
         array = Insert.atEnd(array, 300);
+
 
         Utility.title("Modify Operations");
 
         Modify.atBeginning(array, 111);
-
         Modify.atPosition(array, 222, 2);
-
         Modify.atEnd(array, 333);
+
 
         Utility.title("Traversal");
 
@@ -202,6 +250,7 @@ public class Array {
 
         System.out.println("Reverse Traversal:");
         Traverse.reverse(array);
+
 
         Utility.title("Search");
 
