@@ -1,0 +1,31 @@
+
+# Java files
+*.class
+# common Java build folders
+/bin/
+/out/
+/target/
+
+# C/C++ files
+# object files, libraries, executables
+*.o
+*.obj
+*.so
+*.a
+*.lib
+*.dll
+*.exe
+# common build folders
+/build/
+/Debug/
+/Release/
+
+# Editor/IDE
+.vscode/
+/.idea/
+*.swp
+*.tmp
+*.log
+*.h
+*.bin
+*.h
