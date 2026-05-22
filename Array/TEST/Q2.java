@@ -32,16 +32,9 @@ public class Q2 {
             // Read from input.txt
             System.setIn(new FileInputStream("input.txt"));
 
-            /*
-            12 5 null 9
-            4 null 7 3
-             */
-
             // Write to output.txt
             System.setOut(new PrintStream("output.txt"));
-            /*
-            15 12 0 13
-             */
+
         }
 
         Scanner sc = new Scanner(System.in);
