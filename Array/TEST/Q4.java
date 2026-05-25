@@ -3,7 +3,7 @@ import java.io.PrintStream;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Q3 {
+public class Q4 {
 
     // ------------- FUNCTION AREA: START -------------
 
