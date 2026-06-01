@@ -3,9 +3,7 @@ import java.io.PrintStream;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Q3 {
-
-    // ------------- FUNCTION AREA: START -------------
+public class Q4 {
 
     static int[] removeDamagedTickets(Integer[] tickets, int t) {
 
@@ -19,37 +17,29 @@ public class Q3 {
 
             if (tickets[i] == t) {
 
-                // Keep only even occurrences (2nd, 4th, ...)
                 if (count % 2 == 1) {
-                    result[index] = tickets[i];
-                    index++;
+                    result[index++] = tickets[i];
                 }
 
                 count++;
 
             } else {
 
-                result[index] = tickets[i];
-                index++;
+                result[index++] = tickets[i];
             }
         }
 
-        // Remaining positions automatically stay 0
         return result;
     }
 
-    // ------------- FUNCTION AREA: END ---------------
-
     public static void main(String[] args) throws Exception {
 
-        
         if (System.getProperty("ONLINE_JUDGE") == null) {
             System.setIn(new FileInputStream("input.txt"));
             System.setOut(new PrintStream("output.txt"));
         }
-        
+
         Scanner sc = new Scanner(System.in);
-        // ---------------- START CODE -------------------
 
         Integer[] tickets = new Integer[8];
 
@@ -62,8 +52,6 @@ public class Q3 {
         int[] result = removeDamagedTickets(tickets, t);
 
         System.out.println(Arrays.toString(result));
-
-        // ---------------- END CODE ---------------------
 
         sc.close();
 

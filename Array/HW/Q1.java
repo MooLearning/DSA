@@ -1,53 +1,3 @@
-```
-
-✍️ Author            :    Mostofa Morshed Sayeem
-🌐 Profile           :    https://github.com/smmmsmo
-
-🌐 Credits/Links     :    
-
-```
-
-# 📃 Merge Battery Backup
-
----
-
-## ❓ Question / Description
-
-A robot has two battery backup lines. The first line is checked from the beginning, and the second line is checked from the end. Create a new array by adding the values from opposite directions.
-If any value is null, treat it as 0.
-
-Method Name: mergeBatteryBackup
-
-| Input | Output |
-|:-------------|:--------------|
-| `batteryA = [6, null, 4, -2, null]`, `batteryB = [3, 8, null, 5, 7]` | `[13, 5, 4, 6, 3]` |
-
----
-
-## 🎀 C Code 🎀
-
-```c
-
-REMOVEME
-
-```
-
----
-
-## 🎀 C++ Code 🎀
-
-```C++
-
-REMOVEME
-
-```
-
----
-
-## 🎀 Java Code 🎀
-
-```java
-
 import java.io.FileInputStream;
 import java.io.PrintStream;
 import java.util.Arrays;
@@ -118,17 +68,3 @@ public class Q1 {
     sc.close();
   }
 }
-
-```
-
----
-
-## 🎀 Python Code 🎀
-
-```Python
-
-REMOVEME
-
-```
-
----

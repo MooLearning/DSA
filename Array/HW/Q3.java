@@ -1,53 +1,3 @@
-```
-
-✍️ Author            :    Mostofa Morshed Sayeem
-🌐 Profile           :    https://github.com/smmmsmo
-
-🌐 Credits/Links     :    
-
-```
-
-# 📃 Remove Damaged Tickets
-
----
-
-## ❓ Question / Description
-
-A bus counter stores ticket IDs in a fixed-size array. A ticket ID t is marked as damaged. Starting from the first occurrence of t, remove every alternate damaged ticket.
-After removing, shift the remaining ticket IDs left and fill empty positions with 0.
-
-Method Name: removeDamagedTickets
-
-| Input | Output |
-|:-------------|:--------------|
-| `tickets = [4, 9, 4, 2, 4, 7, 4, 0]`, `t = 4` | `[9, 4, 2, 7, 4, 0, 0, 0]` |
-
----
-
-## 🎀 C Code 🎀
-
-```c
-
-REMOVEME
-
-```
-
----
-
-## 🎀 C++ Code 🎀
-
-```C++
-
-REMOVEME
-
-```
-
----
-
-## 🎀 Java Code 🎀
-
-```java
-
 import java.io.FileInputStream;
 import java.io.PrintStream;
 import java.util.Arrays;
@@ -102,17 +52,3 @@ public class Q3 {
 
   }
 }
-
-```
-
----
-
-## 🎀 Python Code 🎀
-
-```Python
-
-REMOVEME
-
-```
-
----

@@ -1,53 +1,3 @@
-```
-
-✍️ Author            :    Mostofa Morshed Sayeem
-🌐 Profile           :    https://github.com/smmmsmo
-
-🌐 Credits/Links     :    
-
-```
-
-# 📃 Merge Shelves
-
----
-
-## ❓ Question / Description
-
-A library stores book counts in two shelves. Shelf 1 is counted from left to right. Shelf 2 is counted from right to left. Add the opposite-position values and return the new array.
-Empty shelf positions are stored as null, and they should be counted as 0.
-
-Method Name: mergeShelves
-
-| Input | Output |
-|:-------------|:--------------|
-| `shelf1 = [12, 5, null, 9]`, `shelf2 = [4, null, 7, 3]` | `[15, 12, 0, 13]` |
-
----
-
-## 🎀 C Code 🎀
-
-```c
-
-REMOVEME
-
-```
-
----
-
-## 🎀 C++ Code 🎀
-
-```C++
-
-REMOVEME
-
-```
-
----
-
-## 🎀 Java Code 🎀
-
-```java
-
 import java.io.FileInputStream;
 import java.io.PrintStream;
 import java.util.Arrays;
@@ -118,17 +68,3 @@ public class Q2 {
         sc.close();
     }
 }
-
-```
-
----
-
-## 🎀 Python Code 🎀
-
-```Python
-
-REMOVEME
-
-```
-
----

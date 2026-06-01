@@ -29,3 +29,12 @@
 *.h
 *.bin
 *.h
+
+#folders
+TEST/
+
+#garbage
+
+.DS_Store
+Thumbs.db
+
