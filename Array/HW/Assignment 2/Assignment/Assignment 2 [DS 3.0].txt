@@ -1,0 +1,291 @@
+﻿Q1
+Nigatola University has installed an automatic attendance scanner in different classrooms. The scanner stores the number of students detected in each classroom using a 2D array, where each row represents a floor and each column represents a classroom on that floor. The administration wants to know the total number of students detected in the whole building and also wants to identify the classroom where the highest number of students were found. Write a function that returns the total attendance and the position of the classroom with the maximum attendance.
+	Sample Input:
+matrix = [
+  [12, 18, 9],
+  [20, 15, 25],
+  [8, 30, 10]
+]
+	Sample Output:
+
+
+Total Attendance = 147
+Maximum Attendance = 30 at [2, 1]
+	Q2
+A computer lab stores the health score of its devices in a 2D array. Each row represents a lab room and each column represents a device. A device is considered weak if its score is less than 50. The lab assistant wants to count how many weak devices exist in the whole lab and also wants to replace every weak device score with 50, which is the minimum acceptable score. Write a method that modifies the matrix and returns the number of weak devices found.
+	matrix = [
+  [80, 45, 60],
+  [30, 90, 55],
+  [70, 40, 50]
+]
+	Weak Devices = 3
+Updated Matrix = [
+  [80, 50, 60],
+  [50, 90, 55],
+  [70, 50, 50]
+]
+
+
+	Q3
+A faculty member stores quiz marks in a 2D array, where each row represents a student and each column represents a quiz. The faculty wants to identify which quiz was the hardest. A quiz is considered harder if the total marks obtained in that quiz are lower than the others. Write a method that finds the column with the lowest total marks and returns the quiz index along with its total score.
+	Sample Input:
+marks = [
+  [8, 6, 9, 7],
+  [7, 5, 8, 6],
+  [9, 4, 7, 8]
+]
+	Sample Output:
+Hardest Quiz Index = 1
+Total Score = 15
+
+
+
+
+
+
+	Explanation:
+Quiz totals:
+Quiz 0 = 24
+Quiz 1 = 15
+Quiz 2 = 24
+Quiz 3 = 21
+
+
+	Q4
+A cafeteria records sales in a 2D array. Each row represents a day, and each column represents a food item. The manager wants to know which day had the highest total sales and which food item had the highest total sales across all days. Write a method that returns the best day index and the best food item index.
+	Sample Input:
+sales = [
+  [100, 200, 150],
+  [300, 100, 250],
+  [200, 400, 100]
+]
+
+
+	Sample Output:
+Best Day = 2
+Best Food Item = 1
+
+
+
+
+	Explanation:
+Day totals:
+Day 0 = 450
+Day 1 = 650
+Day 2 = 700
+
+
+Food item totals:
+Item 0 = 600
+Item 1 = 700
+Item 2 = 500
+
+
+	Q5
+An exam hall is represented by a square matrix. Each cell contains a risk score based on student movement. The authority wants to compare the risk of the primary diagonal and the secondary diagonal because these seats are directly visible from the invigilator’s desk. Write a method that returns the absolute difference between the primary diagonal sum and the secondary diagonal sum.
+	Sample Input:
+hall = [
+  [10, 2, 3, 4],
+  [5, 20, 7, 8],
+  [9, 10, 30, 12],
+  [13, 14, 15, 40]
+]
+
+
+
+
+	Sample Output:
+66
+
+
+	Explanation:
+Primary diagonal = 10 + 20 + 30 + 40 = 100
+Secondary diagonal = 4 + 7 + 10 + 13 = 34
+Difference = |100 - 34| = 66
+
+
+
+
+	Q6
+A library stores book codes in a square 2D array. Each row represents a shelf and each column represents a position on that shelf. The librarian wants to rearrange the shelf system by swapping the top shelf with the bottom shelf, then swapping the first column with the last column. Write a method that modifies the matrix and returns the final arrangement.
+	Sample Input:
+books = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+]
+
+
+	Sample Output:
+[
+  [9, 8, 7],
+  [6, 5, 4],
+  [3, 2, 1]
+]
+	Q7
+A research team stores experimental values in a square matrix. To reduce storage duplication, they want to copy all values from the upper triangle to the lower triangle like a mirror. The primary diagonal should remain unchanged. Write a method that modifies the matrix so that every lower triangle cell becomes equal to its symmetric upper triangle cell.
+	Sample Input:
+data = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+]
+
+
+
+
+
+
+	
+
+Sample Output:
+[
+  [1, 2, 3],
+  [2, 5, 6],
+  [3, 6, 9]
+]
+
+
+
+
+	
+
+Explanation:
+The value at [1][0] becomes value from [0][1].
+The value at [2][0] becomes value from [0][2].
+The value at [2][1] becomes value from [1][2].
+	Q8
+A security system stores values in a square grid. For a special encryption rule, every element above the primary diagonal must be replaced by the value from its symmetric lower triangle position. After copying, all lower triangle values should become 0. The primary diagonal should not change. Write a method that performs this transformation.
+	Sample Input:
+grid = [
+  [5, 1, 2],
+  [3, 6, 4],
+  [7, 8, 9]
+]
+	Sample Output:
+[
+  [5, 3, 7],
+  [0, 6, 8],
+  [0, 0, 9]
+]
+	Q9
+A simple image is stored as a square matrix where each value represents a pixel. A photo editing tool needs to rotate the image 90 degrees clockwise. The system cannot create another 2D array because of memory limitations, so the rotation must be done inside the original matrix. Write a method that rotates the matrix clockwise in-place.
+	Sample Input:
+image = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+]
+	Sample Output:
+[
+  [7, 4, 1],
+  [8, 5, 2],
+  [9, 6, 3]
+]
+	Q10
+A museum has a square security grid. Only the border cameras need to be shifted one step clockwise for recalibration. The inside cameras should remain unchanged. Write a function that rotates only the outer boundary of the matrix one step clockwise and returns the updated matrix.
+	Sample Input:
+grid = [
+  [1, 2, 3, 4],
+  [5, 6, 7, 8],
+  [9, 10, 11, 12],
+  [13, 14, 15, 16]
+]
+
+
+
+
+
+
+	Sample Output:
+[
+  [5, 1, 2, 3],
+  [9, 6, 7, 4],
+  [13, 10, 11, 8],
+  [14, 15, 16, 12]
+]
+
+
+	Q11
+A robot collects data from a rectangular field represented by a 2D array. The robot starts from the first row. In the first row, it moves left to right. In the second row, it moves right to left. In the third row, it again moves left to right. This pattern continues until all rows are visited. Write a method that returns a 1D array containing the collected values in snake order.
+	Sample Input:
+field = [
+  [1, 2, 3, 4],
+  [5, 6, 7, 8],
+  [9, 10, 11, 12]
+]
+	Sample Output:
+[1, 2, 3, 4, 8, 7, 6, 5, 9, 10, 11, 12]
+
+
+	Q12
+A signal reader stores encrypted characters in a square 2D array. The reader must collect characters diagonally from top-right to bottom-left direction. It starts from every cell in the first row, then continues from the remaining cells of the last column. Write a method that returns the collected characters as a string.
+	Sample Input:
+grid = [
+  ['A', 'B', 'C', 'D'],
+  ['E', 'F', 'G', 'H'],
+  ['I', 'J', 'K', 'L'],
+  ['M', 'N', 'O', 'P']
+]
+
+
+
+
+
+
+
+
+	Sample Output:
+AEBIFMJCGNKDHLOP
+
+
+	Hint: Diagonal Groups
+
+
+A
+B E
+C F I
+D G J M
+H K N
+L O
+P
+	Q13
+ An underground energy detector stores energy levels in a matrix. A point is called a local low-energy point if its value is smaller than all of its valid neighboring cells: top, bottom, left, and right. The detector scans the matrix row-wise and stops at the first local low-energy point. Write a function that returns the position of the first local low-energy point. If no such point exists, return [-1, -1].
+	Sample Input:
+energy = [
+  [20, 18, 22],
+  [17, 10, 19],
+  [21, 16, 23]
+]
+
+
+
+
+	Sample Output:
+[1, 1]
+
+
+	Explanation:
+The value at [1][1] is 10.
+Its neighbors are 18, 16, 17, and 19.
+	Q14
+A drone is scanning a city represented by a 2D grid of energy values. Another 2D grid of the same size contains movement directions for each cell. Each direction can be "N", "S", "E", "W", "NE", "NW", "SE", or "SW". For every cell, the drone starts from that cell and keeps moving in the given direction until it leaves the grid. The energy value of all visited cells, including the starting cell, must be added. Write a function that creates and returns a new 2D array where each cell contains the total energy collected from that position following its direction.
+	Sample Input:
+energy = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+]
+
+
+directions = [
+  ["E", "S", "SW"],
+  ["N", "SE", "W"],
+  ["NE", "E", "N"]
+]
+	Sample Output:
+[
+  [6, 15, 15],
+  [5, 14, 15],
+  [15, 17, 18]
+]
